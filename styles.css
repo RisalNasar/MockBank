@@ -1,0 +1,78 @@
+
+
+html *
+{
+
+   font-family: Verdana !important;
+}
+
+body {
+    background-color: lightblue;
+}
+
+#footer {
+	
+	background-color: white;
+	text-align: center;
+	z-index: -1;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	margin-left: -10px;
+    margin-right:-5px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#logo {
+	position: absolute;
+    top: 0px;
+    right: 0px;
+	z-index: -1;
+}
+
+
+.positiveMessage {
+	color:lime;
+}
+
+.errorMessage{
+	color:red;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    /*padding: 14px 20px;*/
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
