@@ -3,6 +3,8 @@ A PHP web application that is created in-accordance with the OWASP Application S
 
 This version of the MockBank is created in PHP, using the Netbeans IDE.
 
+![Netbeans IDE](/images/netbeans_ide.jpg)
+
 The application allows the following functionalities:
 1. Register an account
 1. Login a registered user
