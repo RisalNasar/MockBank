@@ -15,15 +15,15 @@ The application allows the following functionalities:
 1. Logout
 
 **Login Page**
-![MockBank Index](/images/mockbank_index.jpg)
+<kbd>![MockBank Index](/images/mockbank_index.jpg)</kbd>
 
 
 **Registration Page**
-![Registration Page](/images/registration.jpg)
+<kbd>![Registration Page](/images/registration.jpg)</kbd>
 
 
 **Account Page**
-![Account Page](/images/account.jpg)
+<kbd>![Account Page](/images/account.jpg)</kbd>
 
 
 # OWASP Application Security Verification Standards (ASVS)
