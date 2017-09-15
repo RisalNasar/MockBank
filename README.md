@@ -1,7 +1,7 @@
 # MockBank
 A PHP web application that is created in-accordance with the OWASP Application Security Verification Standards (ASVS), to learn concepts from the same.
 
-This version of the MockBank is created in PHP, using the Netbeans IDE.
+This version of the MockBank is created in PHP, using the Netbeans IDE.  The backend database is MySQL.  The application was operated using [XAMPP](https://www.apachefriends.org/index.html).
 
 ![Netbeans IDE](/images/netbeans_ide.jpg)
 
@@ -13,6 +13,8 @@ The application allows the following functionalities:
 1. Change account details
 1. Change password
 1. Logout
+
+![MockBank Index](/images/mockbank_index.jpg)
 
 
 
