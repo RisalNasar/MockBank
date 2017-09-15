@@ -22,6 +22,19 @@ The application allows the following functionalities:
 ![Registration Page](/images/registration.jpg)
 
 
+**Account Page**
+![Account Page](/images/account.jpg)
+
+
+# OWASP Application Security Verification Standards (ASVS)
+
+[OWASP ASVS](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project) can be used during the Development / Testing phase of a project to ensure that the program complies with Secure Code Design and Development Principles.
+
+Detailed below are selected OWASP ASVS Requirements and how MockBank complies with the requirement.
+
+## Verify all pages and resources by default require authentication except those specifically intended to be public (Principle of complete mediation).
+
+
 
 
 
