@@ -3,7 +3,7 @@ A PHP web application that is created in-accordance with the OWASP Application S
 
 This version of the MockBank is created in PHP, using the Netbeans IDE.  The backend database is MySQL.  The application was operated using [XAMPP](https://www.apachefriends.org/index.html).
 
-![Netbeans IDE](/images/netbeans_ide.jpg)
+<kbd>![Netbeans IDE](/images/netbeans_ide.jpg)</kbd>
 
 The application allows the following functionalities:
 1. Register an account
