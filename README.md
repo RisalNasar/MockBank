@@ -14,7 +14,12 @@ The application allows the following functionalities:
 1. Change password
 1. Logout
 
+**Login Page**
 ![MockBank Index](/images/mockbank_index.jpg)
+
+
+**Registration Page**
+![Registration Page](/images/registration.jpg)
 
 
 
