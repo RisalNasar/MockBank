@@ -32,7 +32,7 @@ The application allows the following functionalities:
 
 Detailed below are selected OWASP ASVS Requirements and how MockBank complies with the requirement.
 
-## Verify all pages and resources by default require authentication except those specifically intended to be public (Principle of complete mediation).
+### 2.1 Verify all pages and resources by default require authentication except those specifically intended to be public (Principle of complete mediation).
 
 
 
