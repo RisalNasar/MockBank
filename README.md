@@ -36,9 +36,11 @@ Detailed below are selected OWASP ASVS Requirements and how MockBank complies wi
 
 ### 2.1 Verify all pages and resources by default require authentication except those specifically intended to be public (Principle of complete mediation).
 
-	This is verified by ensuring that the `session.php` file is included in every page that requires authentication prior to access.  The `session.php` file verifies that the current session is a valid and authenticated session which has not been timedout yet.  If it is the contrary, `session.php` redirects the user to the login page.
+This is verified by ensuring that the `session.php` file is included in every page that requires authentication prior to access.  The `session.php` file verifies that the current session is a valid and authenticated session which has not been timedout yet.  If it is the contrary, `session.php` redirects the user to the login page.
 
+### 2.4 Verify all authentication controls are enforced on the server side.
 
+Authentication information is sent to the server-side `index.php` file through a POST submit request for verification.  Critical verificaitons are not performed on the client-side.
 
 
 
