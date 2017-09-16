@@ -11,7 +11,7 @@ The backend database is MySQL and the webserver is Apache HTTPD.  The applicatio
 
 
 The application allows the following functionalities:
-**
+<b>
 1. Register an account
 1. Login a registered user
 1. View account details
@@ -19,7 +19,7 @@ The application allows the following functionalities:
 1. Change account details
 1. Change password
 1. Logout
-**
+</b>
 
 **Login Page**
 ![MockBank Index](/images/mockbank_index.jpg)
