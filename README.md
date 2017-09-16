@@ -73,6 +73,16 @@ password_verify($password, $hash)
 
 ### 2.16 Verify that credentials are transported using a suitable encrypted link and that all pages/functions that require a user to enter credentials are done so using an encrypted link.
 
-This is implemented by ensuring that HTTPS mode is supported by the Apache HTTPD
+This is implemented by ensuring that HTTPS mode is supported by the Apache HTTPD webserver.  Even if a user tries to access the webpage over HTTP, the web server is configured to redirect the user to the HTTPS webpage.
 
+`.htaccess` file at the Web Root folder should contain the below contents, to redirect HTTP traffic to their HTTPS equivalent:
+```
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+```
+
+### 2.18 Verify that information enumeration is not possible via login, password reset, or forgot account functionality.
+
+`register.php` is the main page susceptible to a user enumeration attack.  A brute force attack is thwarted by ensuring that a Captcha input is required at the page.
 
