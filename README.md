@@ -1,11 +1,17 @@
 # MockBank
 A PHP web application that is created in-accordance with the OWASP Application Security Verification Standards (ASVS), to learn concepts from the same.
 
-This version of the MockBank is created in PHP, using the Netbeans IDE.  The backend database is MySQL.  The application was operated using [XAMPP](https://www.apachefriends.org/index.html).
+This version of the MockBank is created in PHP, using the Netbeans IDE.  
 
 ![Netbeans IDE](/images/netbeans_ide.jpg)
 
+The backend database is MySQL and the webserver is Apache HTTPD.  The application was operated using [XAMPP](https://www.apachefriends.org/index.html).
+
+![XAMPP](/images/xampp.jpg)
+
+
 The application allows the following functionalities:
+**
 1. Register an account
 1. Login a registered user
 1. View account details
@@ -13,6 +19,7 @@ The application allows the following functionalities:
 1. Change account details
 1. Change password
 1. Logout
+**
 
 **Login Page**
 ![MockBank Index](/images/mockbank_index.jpg)
@@ -64,7 +71,8 @@ The password hash is verified by calling the below function:
 password_verify($password, $hash)
 ```
 
+### 2.16 Verify that credentials are transported using a suitable encrypted link and that all pages/functions that require a user to enter credentials are done so using an encrypted link.
 
-
+This is implemented by ensuring that HTTPS mode is supported by the Apache HTTPD
 
 
