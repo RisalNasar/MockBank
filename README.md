@@ -50,32 +50,19 @@ Authentication information is sent to the server-side `index.php` file through a
 
 ### 2.12 Verify that all authentication decisions can be logged, without storing sensitive session identifiers or passwords. This should include requests with relevant metadata needed for security investigations.
 
-A `security_log()` function is defined for this purpose and it records the necessary information when security relevant events take place.
+`security_log(), transaction_log() and changedetails_log()` functions are defined within `logging.php` for this purpose and it records the necessary information when security/transaction/change-in-account-details relevant events take place.
 
+### 2.13 Verify that account passwords are one way hashed with a salt, and there is sufficient work factor to defeat
+
+A hash is generated from the password that was input by the user using BCrypt algorithm.  The hash includes a randomly generated salt as well.
 ```php
-    function security_log($userid, $sourceip, $logsource, $logcategory, $eventcategory, $event) {
-        
-        $logfile = 'C:\logs\mockbank\security_log.txt';
-
-        if (!isset($object)) 
-            $object = new stdClass();
-
-        $object->timestamp = date("F j, Y, g:i a e O");
-        $object->userid = $userid;
-        $object->sourceip = $sourceip;
-        $object->logsource = $logsource;
-        $object->logcategory = $logcategory;
-        $object->eventcategory = $eventcategory;
-        $object->event = $event;
-
-        $json_message_string = json_encode($object);
-        $json_message_string = $json_message_string . ",\n";
-
-
-        error_log($json_message_string, 3,  $logfile); 
-    }
+$hash = password_hash($password, PASSWORD_BCRYPT);
 ```
 
+The password hash is verified by calling the below function:
+```php
+password_verify($password, $hash)
+```
 
 
 
