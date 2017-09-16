@@ -42,13 +42,39 @@ This is verified by ensuring that the `session.php` file is included in every pa
 
 Authentication information is sent to the server-side `index.php` file through a POST submit request for verification.  Critical verificaitons are not performed on the client-side.
 
+### 2.9 Verify that the changing password functionality includes the old password, the new password, and a password confirmation.
+
+**Change Password Page**
+![Change Password Page](/images/change_password.jpg)
 
 
+### 2.12 Verify that all authentication decisions can be logged, without storing sensitive session identifiers or passwords. This should include requests with relevant metadata needed for security investigations.
+
+A `security_log()` function is defined for this purpose and it records the necessary information when security relevant events take place.
+
+```php
+    function security_log($userid, $sourceip, $logsource, $logcategory, $eventcategory, $event) {
+        
+        $logfile = 'C:\logs\mockbank\security_log.txt';
+
+        if (!isset($object)) 
+            $object = new stdClass();
+
+        $object->timestamp = date("F j, Y, g:i a e O");
+        $object->userid = $userid;
+        $object->sourceip = $sourceip;
+        $object->logsource = $logsource;
+        $object->logcategory = $logcategory;
+        $object->eventcategory = $eventcategory;
+        $object->event = $event;
+
+        $json_message_string = json_encode($object);
+        $json_message_string = $json_message_string . ",\n";
 
 
-
-
-
+        error_log($json_message_string, 3,  $logfile); 
+    }
+```
 
 
 
