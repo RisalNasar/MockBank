@@ -192,6 +192,7 @@ session.use_strict_mode=1
 
 Within `php.ini`, set hash function to a strong algorithm:
 
+```
 ; Select a hash function for use in generating session ids.
 ; Possible Values
 ;   0  (MD5 128 bits)
@@ -214,6 +215,7 @@ session.hash_function=12 ;whirlpool
 ; Production Value: 5
 ; http://php.net/session.hash-bits-per-character
 session.hash_bits_per_character=5
+```
 
 ### 3.12 Verify that session ids stored in cookies have their path set to an appropriately restrictive value for the application, and authentication session tokens additionally set the “HttpOnly” and “secure” attributes
 
